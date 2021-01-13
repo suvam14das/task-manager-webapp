@@ -1,0 +1,63 @@
+h1 {
+    font-size : 65px; 
+    color :#333333; 
+}
+
+body {
+    width : 650px; 
+    height : 500px;
+    margin : 0 auto; 
+    font-family: Arial; 
+    padding : 0 16px;
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+header {
+
+    margin-bottom: 16px; 
+
+}
+
+footer {    
+        
+    padding: 5px;
+    border-top: 1px solid #414040;  
+    text-align: right;
+    color:#8b8080; 
+    background-color: #e0dcdc;
+}
+
+header a {
+    
+    border-left: 1px solid #7c7c7c;
+    border-right: 1px solid #7c7c7c;
+    color:#7c7a7a; 
+    padding: 0 5px; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.portrait {
+    width: 250px;
+}
+
+input {
+    border : 1px solid #cccccc; 
+    padding : 8px; 
+    font-size: 20px;
+}
+
+button {    
+    cursor: pointer;
+    border : 1px solid #cccccc; 
+    padding : 8px; 
+    background : #3936eb;
+    color : white; 
+    font-size: 20px;
+}

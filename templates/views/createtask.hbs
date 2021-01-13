@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Create Task | Task Manager</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="" > 
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <form id="newtask" style="padding-top: 40px;">
+
+            <p>Enter Task Description *</p>
+            <textarea id="description" placeholder="Description" rows="4" cols="50" required></textarea>
+            </br>
+
+            <p>Select Completed Status (Optional)</p>
+            <input type="radio" name="completed" value="yes">Yes           
+            <input type="radio" name="completed" value="no">No
+            <p script="padding-top:20px"></p>
+            <button id="submit" >Create</button>
+   
+        </form>
+        
+    </div>
+    {{>footer}}
+
+    <script src="/js/app.js"></script>  
+</body>
+
+
+</html>

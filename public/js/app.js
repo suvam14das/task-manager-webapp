@@ -139,6 +139,7 @@ async function updatetask(index){
 if(document.title === 'Create Task | Task Manager')
 document.getElementById("submit").onclick = async (e) => { 
 
+    e.preventDefault() 
     let data = {}
     data.description = document.getElementById("description").value 
     let completed = document.getElementsByName("completed") 
@@ -166,7 +167,8 @@ document.getElementById("submit").onclick = async (e) => {
 
     let task = await response.json() 
     console.log(task)
-    alert('New task created !')
+    alert('New task created !'); 
+    location.reload() 
 }
 
 if(document.title === 'Logout | Task Manager')

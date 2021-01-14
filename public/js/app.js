@@ -137,7 +137,7 @@ async function updatetask(index){
 }
 
 if(document.title === 'Create Task | Task Manager')
-document.getElementById("submit").onclick = async (e) => { 
+document.getElementById("newtask").addEventListener("submit", async (e) => { 
 
     e.preventDefault() 
     let data = {}
@@ -169,7 +169,7 @@ document.getElementById("submit").onclick = async (e) => {
     console.log(task)
     alert('New task created !'); 
     location.reload() 
-}
+})
 
 if(document.title === 'Logout | Task Manager')
 {    
